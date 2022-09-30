@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahdiy | Menyu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bdb4fccf7f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-serif bg-gray-300">
+    <header class="bg-gray-900 max-w-6xl mx-auto drop-shadow-md items-center">
+      <div
+        class="flex justify-between text-white font-serif p-2 pl-2 pr-2 items-center space-y-6"
+      >
+        <div class="p-4">
+          <h1 class="text-3xl text-white cursive pl-8 pt-6">Mahdiy</h1>
+          <p class="text-white font-serif pl-8">Restoran</p>
+        </div>
+        <nav class="hidden md:block space-x-8 pr-8">
+          <a class="hover:text-orange-500" href="./index.html">
+            <ion-icon class="pr-2 pt-2" name="home"></ion-icon>Bosh Sahifa</a
+          >
+          <a class="hover:text-orange-500" href="./biz_haqmizda.html"
+            ><ion-icon class="pr-2" name="information-circle"></ion-icon>Biz
+            Haqimizda</a
+          >
+          <a class="hover:text-orange-500" href="./galereya.html"
+            ><ion-icon class="pr-2" name="grid"></ion-icon>Menyu</a
+          >
+        </nav>
+        <button id="openBtn" class="text-white block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        id="mobileMenu"
+        style="display: none"
+        class="hidden fixed z-50 inset-0 bg-gray-900 items-center text-white bg-gray-900 p-4"
+      >
+        <div class="">
+          <div class="flex justify-between">
+            <span class="text-xl font-semibold">Mahdiy</span>
+            <button id="closeBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <hr />
+          <nav class="space-y-8 flex flex-col">
+            <a href="./index.html">Bosh Sahifa</a>
+            <a href="./biz_haqmizda.html">Biz Haqimizda</a>
+            <a href="/galereya.html">Menyu</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- GRID -->
+
+    <section
+      class="items-center top-24 max-w-6xl mx-auto bg-gray-900 text-white grid grid-cols-2 gap-10 drop-shadow-lg text-sm md:text-lg lg:text-md"
+    >
+      <div class="max-w-6xl mx-auto p-4">
+        <h1 class="text-md">Bizda Yangilik!</h1>
+        <h1 class="text-3xl md:text-6xl">ASSORTI</h1>
+        <div class="bg-green-500 font-mono p-4">
+          <button class="hover:scale-105 hover:text-md">5 Person |</button>
+          <button class="hover:scale-105 hover:text-md">7 Person |</button>
+          <button class="hover:scale-105 hover:text-md">9 Person</button>
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto mt-4">
+        <img
+          class="w-48 h-48 md:w-96 md:h-96 pt-4 pb-4 pr-4"
+          src="./image/assorti_blyudo.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!--    Menu      -->
+
+    <div
+      class="max-w-6xl mx-auto p-24 pt-16 gap-10 md:grid md:grid-cols-2 space-y-8 md:space-y-0"
+    >
+      <div
+        class="bg-gray-900 text-white grid grid-cols-1 gap-10 rounded-lg w-full md:w-64 relative"
+      >
+        <h1 class="text-xl pt-4 text-center">Ichimliklar</h1>
+        <div class="w-48 m-4">
+          <div class="flex justify-between">
+            <div>
+              <img
+                class="h-20"
+                src="./menu_images/ichimliklar/coca-cola.png"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <h4>Coca-cola</h4>
+              <p>12000</p>
+              <button class="hover:text-orange-500 mt-4">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-48 m-4">
+          <div class="flex justify-between">
+            <div>
+              <img
+                class="h-20"
+                src="./menu_images/ichimliklar/fanta.png"
+                alt="Fanta"
+              />
+            </div>
+            <div>
+              <h4>Fanta</h4>
+              <p>12000</p>
+              <button class="hover:text-orange-500 mt-4">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-48 m-4">
+          <div class="flex justify-between">
+            <div>
+              <img
+                class="h-20"
+                src="./menu_images/ichimliklar/sprite.png"
+                alt="sprite"
+              />
+            </div>
+            <div>
+              <h4>Sprite</h4>
+              <p>12000</p>
+              <button class="hover:text-orange-500 mt-4">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-48 m-4">
+          <div class="flex justify-between">
+            <div>
+              <img
+                class="h-24"
+                src="./menu_images/ichimliklar/nestle.png"
+                alt="Nestle"
+              />
+            </div>
+            <div>
+              <h4>Coca-cola</h4>
+              <p>12000</p>
+              <button class="hover:text-orange-500 mt-4">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gray-900 text-white md:grid md:grid-cols-1 rounded-lg gap-10"
+      >
+        <h1 class="text-xl text-center">Salatlar</h1>
+        <div class="w-48 md:w-72 m-2 md:m-4">
+          <div class="flex justify-between">
+            <div>
+              <img
+                class="h-20 p-2"
+                src="./menu_images/salatlar/grecheskiy_salat.png"
+                alt="grecheskiy-salat"
+              />
+            </div>
+            <div>
+              <h4>Grecheskiy</h4>
+              <p>15.000 20.000 25.000</p>
+              <button class="hover:text-orange-500 mt-4">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-48 md:w-72 m-2 md:m-4">
+          <div class="flex justify-between">
+            <div>
+              <img
+                class="md:h-20 h-16"
+                src="./menu_images/salatlar/olivie_salat.png"
+                alt="Olivie"
+              />
+            </div>
+            <div>
+              <h4>Olivie</h4>
+              <p>17.000 24.000 30.000</p>
+              <button class="hover:text-orange-500 mt-4">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-48 md:w-72 m-2 md:m-4">
+          <div class="flex justify-between">
+            <div>
+              <img
+                class="h-20 w-20 md:w-24"
+                src="./menu_images/salatlar/ovoshnoy_salat.png"
+                alt="ovoshnoy_salat"
+              />
+            </div>
+            <div class="">
+              <h4 class="pl-4">Ovoshnoy salat</h4>
+              <p class="pl-4">19.000 24.000 27.000</p>
+              <button class="hover:text-orange-500 mt-4 pl-4">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-48 md:w-72 m-2 md:m-4">
+          <div class="flex justify-between">
+            <div>
+              <img
+                class="h-20"
+                src="./menu_images/salatlar/tsezar_salat.png"
+                alt="Sezar"
+              />
+            </div>
+            <div>
+              <h4>Tsezar</h4>
+              <p>20.000 25.000 30.000</p>
+              <button class="hover:text-orange-500 mt-4">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TAOMLAR MENYUSI -->
+
+    <h1 class="text-white text-5xl text-center pb-16">Taomlar</h1>
+
+    <section class="max-w-6xl items-center mx-auto pb-8">
+      <div class="md:grid grid grid-cols-2 md:grid-cols-4 pl-6 gap-10 md:pl-20">
+        <div class="border-2 bg-gray-900 h-72 w-48 rounded-md">
+          <div>
+            <img
+              class="w-48 rounded-md"
+              src="./image/assorti_blyudo.jpg"
+              alt=""
+            />
+            <div>
+              <p class="text-white text-center">Assorti</p>
+              <p class="text-sm text-white pt-4">460.000 | 580.000 | 700.000</p>
+            </div>
+            <div class="pt-6 pl-14">
+              <button
+                class="bg-green-500 text-white rounded-md p-2 hover:text-orange-500"
+              >
+                Qo'shish
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 bg-gray-900 rounded-md h-72 w-48">
+          <div>
+            <img
+              class="w-48 h-40 object-cover rounded-md"
+              src="./menu_images/taomlar/shashleek.jpg"
+              alt=""
+            />
+            <div>
+              <p class="text-center text-white pb-4">Shashlik</p>
+              <p class="text-sm text-white pb-4 text-center">
+                13.000 | 10.000 | 12.000
+              </p>
+            </div>
+            <div class="pt-2 pl-14">
+              <button
+                class="rounded-md bg-green-500 text-white p-2 hover:text-orange-500"
+              >
+                Qo'shish
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 rounded-md bg-gray-900 h-72 w-48">
+          <div>
+            <img
+              class="w-48 rounded-md h-40 object-cover"
+              src="./menu_images/taomlar/osh.jpg"
+              alt=""
+            />
+            <div>
+              <p class="text-center text-white">Osh</p>
+              <p class="text-sm text-white text-center pt-4">
+                21.000 | 30.000 | 36.000
+              </p>
+            </div>
+            <div class="pt-6 pl-14">
+              <button
+                class="bg-green-500 rounded-md text-white p-2 hover:text-orange-500"
+              >
+                Qo'shish
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 rounded-md bg-gray-900 h-72 w-48">
+          <div>
+            <img
+              class="w-48 h-40 rounded-md object-cover"
+              src="./menu_images/taomlar/beshbarmak.jpg"
+              alt=""
+            />
+            <div>
+              <p class="text-center text-white">Besh Barmoq</p>
+              <p class="text-sm text-white text-center pt-4">
+                65.000 | 90.000 | 120.000
+              </p>
+            </div>
+            <div class="pt-6 pl-14">
+              <button
+                class="bg-green-500 rounded-md text-white p-2 hover:text-orange-500"
+              >
+                Qo'shish
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Grid 2 qator -->
+        <div class="border-2 rounded-md bg-gray-900 h-72 w-48">
+          <div>
+            <img
+              class="w-48 h-40 rounded-md object-cover"
+              src="./menu_images/taomlar/forel_baliq.jpg"
+              alt=""
+            />
+            <div>
+              <p class="text-center text-white">Qovurilgan Forel</p>
+              <p class="text-sm text-white text-center pt-4">
+                55.000 | 75.000 | 100.000
+              </p>
+            </div>
+            <div class="pt-6 pl-14">
+              <button
+                class="bg-green-500 rounded-md text-white p-2 hover:text-orange-500"
+              >
+                Qo'shish
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 rounded-md bg-gray-900 h-72 w-48">
+          <div>
+            <img
+              class="w-48 h-40 rounded-md object-cover"
+              src="./menu_images/taomlar/steyk.jpg"
+              alt=""
+            />
+            <div>
+              <p class="text-center text-white">Steyk</p>
+              <p class="text-sm text-white text-center pt-4">
+                60.000 | 90.000 | 115.000
+              </p>
+            </div>
+            <div class="pt-6 pl-14">
+              <button
+                class="bg-green-500 rounded-md text-white p-2 hover:text-orange-500"
+              >
+                Qo'shish
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 rounded-md bg-gray-900 h-72 w-48">
+          <div>
+            <img
+              class="w-48 h-40 rounded-md object-cover"
+              src="./menu_images//taomlar/kovurma-shurpa-2.jpg"
+              alt=""
+            />
+            <div>
+              <p class="text-center text-white">Qovurma sho'rva</p>
+              <p class="text-sm text-white text-center pt-4">
+                18.000 | 27.000 | 36.000
+              </p>
+            </div>
+            <div class="pt-6 pl-14">
+              <button
+                class="bg-green-500 rounded-md text-white p-2 hover:text-orange-500"
+              >
+                Qo'shish
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 rounded-md bg-gray-900 h-72 w-48">
+          <div>
+            <img
+              class="w-48 h-40 rounded-md object-cover"
+              src="./menu_images/taomlar/ganfan.jpg"
+              alt=""
+            />
+            <div>
+              <p class="text-center text-white">Gan-Fan</p>
+              <p class="text-sm text-white text-center pt-4">
+                27.000 | 40.000 | 53.000
+              </p>
+            </div>
+            <div class="pt-6 pl-14">
+              <button
+                class="bg-green-500 rounded-md text-white p-2 hover:text-orange-500"
+              >
+                Qo'shish
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-gray-900 text-white max-w-6xl mx-auto text-lg p-4 space-y-4"
+    >
+      <h1 class="text-center text-xl p-4">Mahdiy</h1>
+
+      <div class="grid md:grid-cols-4 md:gap-12 text-sm md:text-md">
+        <div class="w-64 p-4 textx-center">
+          <h1 class="text-lg">Manzilimiz</h1>
+          <p class="text-sm md:text-md">
+            Toshkent Shahar, Mirzo Ulug'bek Tumani
+          </p>
+        </div>
+        <div class="w-64 p-4">
+          <h1>Biz Bilan Bog'laning</h1>
+          <a class="font-mono" href="tel:+998 (97) 701 37 00"
+            >+998 (97) 701-37-00</a
+          >
+          <a href="">mahdiymamurov@gmail.com</a>
+        </div>
+        <div class="w-48 p-4">
+          <nav class="">
+            <ul>
+              <li><a href="./index.html">Bosh Sahifa</a></li>
+              <li><a href="./biz_haqmizda.html">Biz Haqimizda</a></li>
+              <li><a href="./galereya.html">Menyu</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="space-y-4">
+          <h1 class="text-lg">Social Media</h1>
+          <p class="text-sm text-gray-400">
+            Bizning Ijtimoiy tarmoqlardagi sahifalarimizni kuzatib boring
+          </p>
+          <div class="social flex space-x-4">
+            <a href="#">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/fluency/50/000000/instagram-new.png" /></a
+            ><a href="">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/color/50/000000/telegram-app.png"
+            /></a>
+            <a href="">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/color/48/000000/whatsapp.png"
+            /></a>
+            <a href="">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/color/48/000000/twitter.png"
+            /></a>
+            <a href="">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="" />
+      <h1 class="text-center p-4">&copyBarcha Huquqlar Himoyalangan</h1>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

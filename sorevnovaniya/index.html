@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahdiy | Restoran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bdb4fccf7f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="text-white">
+    <header class="">
+      <header class="bg-gray-900 max-w-6xl mx-auto drop-shadow-md items-center">
+        <div
+          class="flex justify-between text-white font-serif p-2 pl-2 pr-2 items-center space-y-6"
+        >
+          <div class="p-4">
+            <h1 class="text-3xl text-white cursive pl-8 pt-6">Mahdiy</h1>
+            <p class="text-white font-serif pl-8">Restoran</p>
+          </div>
+          <nav class="hidden md:block space-x-8 pr-8">
+            <a class="hover:text-orange-500" href="./index.html">
+              <ion-icon class="pr-2 pt-2" name="home"></ion-icon>Bosh Sahifa</a
+            >
+            <a class="hover:text-orange-500" href="./biz_haqmizda.html"
+              ><ion-icon class="pr-2" name="information-circle"></ion-icon>Biz
+              Haqimizda</a
+            >
+            <a class="hover:text-orange-500" href="./galereya.html"
+              ><ion-icon class="pr-2" name="grid"></ion-icon>Menyu</a
+            >
+          </nav>
+          <button id="openBtn" class="text-white block md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="mobileMenu"
+          style="display: none"
+          class="hidden fixed z-50 inset-0 bg-gray-900 items-center text-white bg-gray-900 p-4"
+        >
+          <div class="">
+            <div class="flex justify-between">
+              <span class="text-xl font-semibold">Mahdiy</span>
+              <button id="closeBtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <hr />
+            <nav class="space-y-8 flex flex-col">
+              <a href="./index.html">Bosh Sahifa</a>
+              <a href="./biz_haqmizda.html">Biz Haqimizda</a>
+              <a href="/galereya.html">Menyu</a>
+            </nav>
+          </div>
+        </div>
+        <img
+          class="max-w-96 object-cover image"
+          src="./image/background-header.jpg"
+          alt=""
+        />
+      </header>
+    </header>
+
+    <section
+      class="grid md:grid-cols-2 max-w-6xl mx-auto items-center p-6 content-center gap-10"
+    >
+      <div class="w-96 p-4 since float-right">
+        <h1 class="cursive text-6xl text-center align-center">Since 2022</h1>
+        <p class="align-center font-serif">
+          Biz 2022 yil 04 iyun kuni o'z faoliatimizni boshladik! Sizlarni o'z
+          Restoranimizda kutib qolamiz.Tez orada shahardagi nufuzli restoranlar
+          safiga kiramiz.
+        </p>
+      </div>
+      <div>
+        <img class="" src="./image/assorti.jpg" alt="assorti_blyudo" />
+      </div>
+      <div class="">
+        <img
+          class="object-cover w-full"
+          src="./image/restoran_hall.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="items-center">
+        <h2 class="text-3xl font-semibold font-serif text-center">
+          Restoranimizning birinchi zali
+        </h2>
+        <p class="font-semibold font-serif text-center">
+          Bu zal 200 kishiga mo'ljallangan.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="max-w-6xl mx-auto">
+        <img
+          class="object-cover w-full"
+          src="./image/header_background4.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto items-center grid grid-cols-2 p-6 top-16">
+      <div class="p-6 text-center">
+        <h2 class="cursive text-2xl md:text-6xl p-6 text-center">Mahdiy</h2>
+        <p class="font-serif text-sm md:text-md font-semibold p-6">
+          Menyuda barcha Turdagi taomlar Mavjud!
+        </p>
+        <a
+          class="bg-cyan-800 font-semibold px-5 py-3 text-white text-sm md:text-xl rounded-md transform hover:scale-105"
+          href="./galereya.html"
+          >Menyu
+        </a>
+      </div>
+      <div>
+        <img
+          src="./image/depositphotos_40102871-stock-photo-restaurant-menu.webp"
+          alt=""
+        />
+      </div>
+    </section>
+    <footer
+      class="bg-gray-900 text-white max-w-6xl mx-auto text-lg p-4 space-y-4"
+    >
+      <h1 class="text-center text-xl p-4">Mahdiy</h1>
+
+      <div class="grid md:grid-cols-4 md:gap-12 text-sm md:text-md">
+        <div class="w-64 p-4 textx-center">
+          <h1 class="text-lg">Manzilimiz</h1>
+          <p class="text-sm md:text-md">
+            Toshkent Shahar, Mirzo Ulug'bek Tumani
+          </p>
+        </div>
+        <div class="w-64 p-4">
+          <h1>Biz Bilan Bog'laning</h1>
+          <a class="font-mono" href="tel:+998 (97) 701 37 00"
+            >+998 (97) 701-37-00</a
+          >
+          <a href="">mahdiymamurov@gmail.com</a>
+        </div>
+        <div class="w-48 p-4">
+          <nav class="">
+            <ul>
+              <li><a href="./index.html">Bosh Sahifa</a></li>
+              <li><a href="./biz_haqmizda.html">Biz Haqimizda</a></li>
+              <li><a href="./galereya.html">Menyu</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="space-y-4">
+          <h1 class="text-lg">Social Media</h1>
+          <p class="text-sm text-gray-400">
+            Bizning Ijtimoiy tarmoqlardagi sahifalarimizni kuzatib boring
+          </p>
+          <div class="social flex space-x-4">
+            <a href="#">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/fluency/50/000000/instagram-new.png" /></a
+            ><a href="">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/color/50/000000/telegram-app.png"
+            /></a>
+            <a href="">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/color/48/000000/whatsapp.png"
+            /></a>
+            <a href="">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/color/48/000000/twitter.png"
+            /></a>
+            <a href="">
+              <img
+                class="w-8"
+                src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="" />
+      <h1 class="text-center p-4">&copyBarcha Huquqlar Himoyalangan</h1>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

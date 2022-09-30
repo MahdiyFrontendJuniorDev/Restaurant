@@ -1,0 +1,67 @@
+html,
+body {
+  scrollbar-color: #00ff00 #000000; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: auto thin none; /* толщина */
+  background: url(https://funart.pro/uploads/posts/2021-04/thumbs/1618429779_31-funart_pro-p-oboi-fon-krasivii-temnii-fon-31.jpg);
+}
+
+.navbar {
+  position: absolute;
+  height: 14px;
+  right: 220px;
+
+  color: rgb(255, 255, 255);
+}
+.navbar1 {
+  position: absolute;
+  left: 220px;
+
+  color: rgb(255, 255, 255);
+}
+.welcome {
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 255, 255);
+  right: 670px;
+  top: 200px;
+  font-size: 77px;
+  text-shadow: 1px 0px 4px wheat;
+}
+.Mahdiy {
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 81px;
+  right: 670px;
+  top: 250px;
+}
+.image {
+  width: 100%;
+  height: 600px;
+}
+
+.cursive {
+  font-family: "Indie Flower", cursive;
+}
+.widget-9 {
+  margin: 0;
+  border: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: auto;
+  min-height: 0;
+  font-size: 25px;
+  right: 0;
+
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+  padding-bottom: 9px;
+}
+
+.bg-img1 {
+  background-image: url(https://sovkusom.ru/wp-content/uploads/blog/z/zharenoe-myaso-prodlevaet-zhizn/thumb-1200x600.jpg);
+  width: 100%;
+  height: 500px;
+}
